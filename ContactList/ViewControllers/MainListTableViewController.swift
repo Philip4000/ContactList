@@ -9,13 +9,7 @@ import UIKit
 
 class MainListTableViewController: UITableViewController {
     
-    
     var persons: [Person]!
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-    }
 
     // MARK: - Table view data source
 
