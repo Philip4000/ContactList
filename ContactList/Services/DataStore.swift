@@ -18,7 +18,7 @@ class DataStore {
         "Carl",
         "Alan",
         "Tom",
-        "Tom"
+        "Nil"
     ]
     
     let surnames = [
@@ -59,6 +59,4 @@ class DataStore {
         "+79999999",
         "+71234567"
     ]
-    
-    
 }

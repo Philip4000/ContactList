@@ -23,14 +23,14 @@ struct Person {
         var persons: [Person] = []
         
         let shuffledNames = data.names.shuffled()
-        let shuffledSurnames = data.names.shuffled()
+        let shuffledSurnames = data.surnames.shuffled()
         let shuffledEmails = data.emails.shuffled()
         let shuffledPhones = data.phones.shuffled()
         
         let minCount = min(shuffledNames.count, shuffledSurnames.count, shuffledEmails.count, shuffledPhones.count)
         
         
-        for i in 0...minCount {
+        for i in 0..<minCount {
             let person = Person(
                 name: shuffledNames[i],
                 surname: shuffledSurnames[i],

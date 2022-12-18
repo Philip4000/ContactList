@@ -31,8 +31,8 @@
                             <outlet property="delegate" destination="lNY-ZG-Bg8" id="aXp-H8-pd3"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Detail" image="person.circle" catalog="system" id="BMs-W6-6ie"/>
-                    <navigationItem key="navigationItem" title="Persons List" largeTitleDisplayMode="never" id="ob1-4U-O0Z"/>
+                    <tabBarItem key="tabBarItem" title="Detail" image="person" catalog="system" id="BMs-W6-6ie"/>
+                    <navigationItem key="navigationItem" title="Persons List" id="ob1-4U-O0Z"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X1b-V0-GfO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -57,10 +57,11 @@
         <!--Persons List-->
         <scene sceneID="Wc6-4G-c6A">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="fnZ-bi-oAD" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="fnZ-bi-oAD" customClass="TabBarController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Persons List" id="EIQ-mM-GZb"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RpS-iy-L5K">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -100,7 +101,7 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="List" image="person.2.circle" catalog="system" id="aQh-xL-YoP"/>
-                    <navigationItem key="navigationItem" title="Root View Controller" largeTitleDisplayMode="always" id="2pw-Gr-ecf"/>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="2pw-Gr-ecf"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KDO-zl-NwY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -140,6 +141,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Full Name" id="wWe-Fw-xNl"/>
+                    <connections>
+                        <outlet property="emailLabel" destination="Q81-lP-3C7" id="bHL-xQ-kB8"/>
+                        <outlet property="phoneLabel" destination="vUI-Pq-D34" id="IQP-AJ-SzX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JeI-dO-e8b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -147,8 +152,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="person" catalog="system" width="128" height="121"/>
         <image name="person.2.circle" catalog="system" width="128" height="123"/>
-        <image name="person.circle" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
